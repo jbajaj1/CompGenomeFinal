@@ -1,12 +1,6 @@
 
-import sys
-import Bio
+from Bio import SeqIO
 
-data = sys.stdin
-
-for line in data:
-    name = fasta.id
-    sequence = fasta.seq.tostring().lower()
-
-print(data)
-
+for seq_record in SeqIO.parse('chr10.fa', 'fasta'):
+    print(seq_record.id)
+    print(seq_record.seq)
