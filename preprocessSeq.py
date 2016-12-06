@@ -4,7 +4,7 @@ import os
 import getopt
 import pickle
 
-READ_LEN = 100
+READ_LEN = 10
 
 def preprocessSeq():
 	i = 0

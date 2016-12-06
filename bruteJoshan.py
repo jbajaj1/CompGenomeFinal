@@ -10,9 +10,10 @@ numC = 0
 numG = 0
 numT = 0
 numN = 0
-INVERSION_LEN = 40
-READ_LEN = 100
+INVERSION_LEN = 4
+READ_LEN = 10
 def findMicroInversions(read):
+	c = 0
 	global numG
 	global numA
 	global numT
@@ -27,12 +28,18 @@ def findMicroInversions(read):
 		numN = 0
 		revComp = reverseCompliment(read, position)
 		if (numA, numC, numG, numT, numN) in sequencesDic:
+			c += 1
 			for element in sequencesDic[(numA, numC, numG, numT, numN)]:
 				if sequence[element:element+READ_LEN] == revComp:
 					print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
 					print("It matches with the read that starts at position " + str(element))
 					print("The microinversion occurs at character position " + str(position))
-	        position += 1			
+                                else:
+                                    print(sequence[element:element+READ_LEN] + "\n" + revComp)
+		else:
+			c += 1
+	        position += 1	
+	print c
 
 
 def reverseCompliment(read, position):
@@ -90,15 +97,14 @@ def reverseCompliment(read, position):
 
 
 
-#sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
-#sequence = pickle.load(open("seqString.p", "rb"))
-i = 0
-print len("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT")
-while i + INVERSION_LEN < READ_LEN:
-	print(len(reverseCompliment("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT", i)))
-	i += 1
-'''
+sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
+sequence = pickle.load(open("seqString.p", "rb"))
+#i = 0
+#print len("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT")
+#while i + INVERSION_LEN < READ_LEN:
+#	print(len(reverseCompliment("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT", i)))
+#	i += 1
+
 for line in sys.stdin:
 	line.strip("\n")
 	findMicroInversions(line.upper())
-'''
