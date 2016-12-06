@@ -13,6 +13,11 @@ numN = 0
 INVERSION_LEN = 40
 READ_LEN = 100
 def findMicroInversions(read):
+	global numG
+	global numA
+	global numT
+	global numC
+	global numN
 	position = 0
 	while position + INVERSION_LEN < len(read):
 		numA = 0
@@ -31,6 +36,11 @@ def findMicroInversions(read):
 
 
 def reverseCompliment(read, position):
+	global numG
+	global numA
+	global numT
+	global numC
+	global numN
 	revComp = read[0:position]
 	for char in revComp:
 		if char == "A":
