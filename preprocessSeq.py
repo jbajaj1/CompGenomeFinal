@@ -18,6 +18,7 @@ def preprocessSeq():
 			i += 1
 		else:
 			seqString += line.strip("\n")
+	pickle.dump(seqString, open("seqString.p", "wb"))
 	position = 0
 	while position + 40 < len(seqString):
 		chunk = seqString[position:position+40]
@@ -42,6 +43,6 @@ def preprocessSeq():
 		numT = 0
 		numN = 0
 		position += 1
-	pickle.dump(sequences, open("sequencesDic.p", "wb"))
+    pickle.dump(sequences, open("sequencesDic.p", "wb"))
 
 preprocessSeq()
