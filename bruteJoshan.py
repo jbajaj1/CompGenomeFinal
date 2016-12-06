@@ -27,7 +27,7 @@ def findMicroInversions(read):
 					print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
 					print("It matches with the read that starts at position " + str(element))
 					print("The microinversion occurs at character position " + str(position))
-				
+	        position += 1			
 
 
 def reverseCompliment(read, position):
