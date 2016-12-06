@@ -19,7 +19,7 @@ def findMicroInversions(read):
 	global numC
 	global numN
 	position = 0
-	while position + INVERSION_LEN < len(read):
+	while position + INVERSION_LEN < READ_LEN:
 		numA = 0
 		numC = 0
 		numG = 0
@@ -53,8 +53,10 @@ def reverseCompliment(read, position):
 			numT += 1
 		elif char == "N":
 			numN += 1
+	#print str(len(revComp)) + "blachh"
 	temprev = read[position:position+INVERSION_LEN]
 	temprev = temprev[::-1]
+	#print temprev
 	for char in temprev:
 		if char == "A": 
 			revComp += "T"
@@ -71,7 +73,8 @@ def reverseCompliment(read, position):
 		elif char == "N":
 			revComp += "N"
 			numN += 1
-	revComp += read[position+INVERSION_LEN]
+	#print str(len(revComp)) + "after middle for"
+	revComp += read[position+INVERSION_LEN:]
 	for char in read[position+INVERSION_LEN:]:
 		if char == "A":
 			numA += 1
@@ -87,8 +90,15 @@ def reverseCompliment(read, position):
 
 
 
-sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
-sequence = pickle.load(open("seqString.p", "rb"))
+#sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
+#sequence = pickle.load(open("seqString.p", "rb"))
+i = 0
+print len("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT")
+while i + INVERSION_LEN < READ_LEN:
+	print(len(reverseCompliment("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT", i)))
+	i += 1
+'''
 for line in sys.stdin:
 	line.strip("\n")
 	findMicroInversions(line.upper())
+'''
