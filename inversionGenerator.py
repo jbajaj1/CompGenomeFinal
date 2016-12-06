@@ -27,7 +27,7 @@ def generate_inversions(seq, numInversions, minLen, maxLen, readStart):
                     collision = True
 #                    print("Collision!")
 
-        print("Read from index %d to %d in the sequence with a %dbp microinversion from %d to %d" % (readStart, readStart + 100, inversionLen, inversionIndex, inversionIndex + 40))
+        print("Read from index %d to %d in the sequence with a %dbp microinversion from %d to %d" % (readStart, readStart + 100, inversionLen, inversionIndex, inversionIndex + 4))
         originalSeq = seq[inversionIndex:inversionIndex + inversionLen]
         invertedSegments.append((inversionIndex, inversionIndex + inversionLen))
 #print("Inversion %d: index = %d, len = %d" % (i, inversionIndex, inversionLen))
@@ -40,15 +40,16 @@ def generate_inversions(seq, numInversions, minLen, maxLen, readStart):
 
 data = parse_input()
 #data = "ACGTTTTTTA" # Hardcoded example sequence
-readIndex = random.randint(100, len(data) - 100)
-read = data[readIndex:readIndex + 100]
+#readIndex = random.randint(100, len(data) - 100)
+readIndex = 10
+read = data[readIndex:readIndex + 10]
 
-invertedRead = generate_inversions(read, 1, 40, 40, readIndex)
+invertedRead = generate_inversions(read, 1, 4, 4, readIndex)
 #print("Read with 40bp micro inversion: %s" % invertedRead)
 print(invertedRead)
-print("Normal read from 0 to 100")
-print(data[:100])
+print("Normal read from 0 to 10")
+print(data[:10])
 #print
-#print(data[:100])
+#print(data[:20])
 #print(data[100:200])
 
