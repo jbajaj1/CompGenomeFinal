@@ -23,7 +23,7 @@ def preprocessSeq():
 	seqString = seqString.upper()
 	pickle.dump(seqString, open("seqString.p", "wb"))
 	position = 0
-	while position + READ_LEN < len(seqString):
+	while position + READ_LEN <= len(seqString):
 		chunk = seqString[position:position+READ_LEN]
 		for char in chunk:
 			if char == 'N':

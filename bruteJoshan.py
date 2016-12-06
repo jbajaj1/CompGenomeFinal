@@ -20,17 +20,21 @@ def findMicroInversions(read):
 	global numC
 	global numN
 	position = 0
-	while position + INVERSION_LEN < READ_LEN:
+	while position + INVERSION_LEN <= READ_LEN:
 		numA = 0
 		numC = 0
 		numG = 0
 		numT = 0
 		numN = 0
 		revComp = reverseCompliment(read, position)
+                if (revComp == "GCTTCCTCAT"):
+                    print "somethingelse"
 		if (numA, numC, numG, numT, numN) in sequencesDic:
 			c += 1
+                        if (revComp == "GCTTCCTCAT"):
+                            print "something"
 			for element in sequencesDic[(numA, numC, numG, numT, numN)]:
-				if sequence[element:element+READ_LEN] == revComp:
+				if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
 					print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
 					print("It matches with the read that starts at position " + str(element))
 					print("The microinversion occurs at character position " + str(position))
@@ -39,7 +43,7 @@ def findMicroInversions(read):
 		else:
 			c += 1
 	        position += 1	
-	print c
+	#print c
 
 
 def reverseCompliment(read, position):
