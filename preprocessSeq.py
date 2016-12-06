@@ -4,6 +4,8 @@ import os
 import getopt
 import pickle
 
+READ_LEN = 100
+
 def preprocessSeq():
 	i = 0
 	seqString = ""
@@ -21,8 +23,8 @@ def preprocessSeq():
 	seqString = seqString.upper()
 	pickle.dump(seqString, open("seqString.p", "wb"))
 	position = 0
-	while position + 40 < len(seqString):
-		chunk = seqString[position:position+40]
+	while position + READ_LEN < len(seqString):
+		chunk = seqString[position:position+READ_LEN]
 		for char in chunk:
 			if char == 'N':
 				numN += 1
