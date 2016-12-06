@@ -18,20 +18,21 @@ def preprocessSeq():
 			i += 1
 		else:
 			seqString += line.strip("\n")
+	seqString = seqString.upper()
 	pickle.dump(seqString, open("seqString.p", "wb"))
 	position = 0
 	while position + 40 < len(seqString):
 		chunk = seqString[position:position+40]
 		for char in chunk:
-			if char == 'N' or char == 'n':
+			if char == 'N':
 				numN += 1
-			elif char == 'A' or char == 'a':
+			elif char == 'A':
 				numA += 1
-			elif char == 'C' or char == 'c':
+			elif char == 'C':
 				numC += 1
-			elif char == 'G' or char == 'g':
+			elif char == 'G':
 				numG += 1
-			elif char == 'T' or char == 't':
+			elif char == 'T':
 				numT += 1
 		if (numA, numC, numG, numT, numN) in sequences:
 			sequences[(numA, numC, numG, numT, numN)].append(position)
@@ -43,6 +44,6 @@ def preprocessSeq():
 		numT = 0
 		numN = 0
 		position += 1
-    pickle.dump(sequences, open("sequencesDic.p", "wb"))
+		pickle.dump(sequences, open("sequencesDic.p", "wb"))
 
 preprocessSeq()
