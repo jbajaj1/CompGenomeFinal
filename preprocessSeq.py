@@ -3,6 +3,7 @@ import sys
 import os
 import getopt
 import pickle
+import time
 
 READ_LEN = 100
 
@@ -48,4 +49,7 @@ def preprocessSeq():
 		position += 1
 		pickle.dump(sequences, open("sequencesDic.p", "wb"))
 
+start = time.time()
 preprocessSeq()
+end = time.time()
+print("This program took " + str(end - start) + " seconds")
