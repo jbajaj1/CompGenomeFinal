@@ -32,15 +32,16 @@ def findMicroInversions(read):
 			if (numA, numC, numG, numT, numN) in sequencesDic:
 				for element in sequencesDic[(numA, numC, numG, numT, numN)]:
 					if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
-						print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
+						print("The following contains a microinversion: " + read.strip("\n"))
 						print("The inversion length is " + str(INVERSION_LEN))
 						print("It matches with the read that starts at position " + str(element))
 						print("The microinversion occurs at character position " + str(position))
-						print("It comes from the following read: " + read)
+						print("It matches to: " + sequence[element:element+READ_LEN])
 						#return statement -- discuss with group if we should have
 			position += 1	
 		INVERSION_LEN -= 1
 	'''
+	VERSION WITHOUT VARYING INVERSION LENGTH
 	position = 0
 	while position + INVERSION_LEN <= READ_LEN:
 		numA = 0
