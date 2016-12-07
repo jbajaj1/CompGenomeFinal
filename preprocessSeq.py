@@ -21,16 +21,16 @@ def preprocessSeq():
 	#dictionary to store the processedData
 	sequences = {}
 	for line in sys.stdin:
-		#throw away lines without nucleotides
+		#throw away header line
 		if i == 0:
 			i += 1
 		else:
+			#Adds every line in the sequence to the string of nucleotides
 			seqString += line.strip("\n")
 
 	seqString = seqString.upper()
 	#write our reads to a pickle file
 	pickle.dump(seqString, open("seqString.p", "wb"))
-
 	#begin processing
 	position = 0
 	while position + READ_LEN <= len(seqString):
@@ -58,8 +58,8 @@ def preprocessSeq():
 		numT = 0
 		numN = 0
 		position += 1
-		#write dictionary to file
-		pickle.dump(sequences, open("sequencesDic.p", "wb"))
+	#write dictionary to file
+	pickle.dump(sequences, open("sequencesDic.p", "wb"))
 		
 #timing our preprocessing
 start = time.time()
