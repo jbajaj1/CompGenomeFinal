@@ -3,7 +3,7 @@ import sys
 import os
 import getopt
 import pickle
-
+import time
 
 numA = 0
 numC = 0
@@ -120,7 +120,12 @@ def reverseCompliment(read, position):
 
 sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
 sequence = pickle.load(open("seqString.p", "rb"))
-
+start = time.time()
 for line in sys.stdin:
 	line.strip("\n")
+	startRead = time.time()
 	findMicroInversions(line.upper())
+	endRead = time.time()
+	print("This read took " + str(endRead - startRead) + " seconds to process.")
+end = time.time()
+print("This program took " + str(end-start) + " seconds to run.")
