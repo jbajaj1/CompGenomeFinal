@@ -10,15 +10,37 @@ numC = 0
 numG = 0
 numT = 0
 numN = 0
-INVERSION_LEN = 4
-READ_LEN = 10
+INVERSION_LEN = 100
+READ_LEN = 100
 def findMicroInversions(read):
-	c = 0
 	global numG
 	global numA
 	global numT
 	global numC
 	global numN
+	global INVERSION_LEN
+	while INVERSION_LEN >= 15:
+
+		position = 0
+		while position + INVERSION_LEN <= READ_LEN:
+			numA = 0
+			numC = 0
+			numG = 0
+			numT = 0
+			numN = 0
+			revComp = reverseCompliment(read, position)
+			if (numA, numC, numG, numT, numN) in sequencesDic:
+				for element in sequencesDic[(numA, numC, numG, numT, numN)]:
+					if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
+						print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
+						print("The inversion length is " + str(INVERSION_LEN))
+						print("It matches with the read that starts at position " + str(element))
+						print("The microinversion occurs at character position " + str(position))
+						print("It comes from the following read: " + read)
+						#return statement -- discuss with group if we should have
+			position += 1	
+		INVERSION_LEN -= 1
+	'''
 	position = 0
 	while position + INVERSION_LEN <= READ_LEN:
 		numA = 0
@@ -31,10 +53,13 @@ def findMicroInversions(read):
 			for element in sequencesDic[(numA, numC, numG, numT, numN)]:
 				if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
 					print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
+					print("The inversion length is " + str(INVERSION_LEN))
 					print("It matches with the read that starts at position " + str(element))
 					print("The microinversion occurs at character position " + str(position))
 					print("It comes from the following read: " + read)
-	    position += 1	
+					#return statement -- discuss with group if we should have
+		position += 1
+	'''
 
 
 def reverseCompliment(read, position):
@@ -43,6 +68,7 @@ def reverseCompliment(read, position):
 	global numT
 	global numC
 	global numN
+	global INVERSION_LEN
 	revComp = read[0:position]
 	for char in revComp:
 		if char == "A":
