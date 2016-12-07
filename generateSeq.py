@@ -1,7 +1,7 @@
 import time
 from random import randint
 
-SEQUENCE_SIZE = 500000
+SEQUENCE_SIZE = 300
 
 def generateSeq():
 	seq = ">Randomly Generated Sequence\n"
@@ -13,4 +13,4 @@ def generateSeq():
 	return seq
 start = time.time()
 print(generateSeq())
-print(str(time.time() - start) + " seconds to generate sequence of size " + str(SEQUENCE_SIZE))
+#print(str(time.time() - start) + " seconds to generate sequence of size " + str(SEQUENCE_SIZE))
