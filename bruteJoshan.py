@@ -11,6 +11,7 @@ numG = 0
 numT = 0
 numN = 0
 INVERSION_LEN = 100
+MIN_INVERSION = 15
 READ_LEN = 100
 def findMicroInversions(read):
 	global numG
@@ -20,7 +21,7 @@ def findMicroInversions(read):
 	global numN
 	global INVERSION_LEN
 	INVERSION_LEN = 100
-	while INVERSION_LEN >= 15:
+	while INVERSION_LEN >= MIN_INVERSION:
 
 		position = 0
 		while position + INVERSION_LEN <= READ_LEN:
@@ -38,7 +39,7 @@ def findMicroInversions(read):
 						print("It matches with the read that starts at position " + str(element))
 						print("The microinversion occurs at character position " + str(position) + " in the read")
 						print("It matches to: " + sequence[element:element+READ_LEN])
-						#return statement -- discuss with group if we should have
+						return 0
 			position += 1	
 		INVERSION_LEN -= 1
 	'''
