@@ -36,7 +36,7 @@ def findMicroInversions(read):
 						print("The following contains a microinversion: " + read.strip("\n"))
 						print("The inversion length is " + str(INVERSION_LEN))
 						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position))
+						print("The microinversion occurs at character position " + str(position) + " in the read")
 						print("It matches to: " + sequence[element:element+READ_LEN])
 						#return statement -- discuss with group if we should have
 			position += 1	
