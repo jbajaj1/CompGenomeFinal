@@ -27,23 +27,14 @@ def findMicroInversions(read):
 		numT = 0
 		numN = 0
 		revComp = reverseCompliment(read, position)
-                if (revComp == "GCTTCCTCAT"):
-                    print "somethingelse"
 		if (numA, numC, numG, numT, numN) in sequencesDic:
-			c += 1
-                        if (revComp == "GCTTCCTCAT"):
-                            print "something"
 			for element in sequencesDic[(numA, numC, numG, numT, numN)]:
 				if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
 					print("The following contains a microinversion: " + sequence[element:element+READ_LEN])
 					print("It matches with the read that starts at position " + str(element))
 					print("The microinversion occurs at character position " + str(position))
-                                else:
-                                    print(sequence[element:element+READ_LEN] + "\n" + revComp)
-		else:
-			c += 1
-	        position += 1	
-	#print c
+					print("It comes from the following read: " + read)
+	    position += 1	
 
 
 def reverseCompliment(read, position):
@@ -64,10 +55,8 @@ def reverseCompliment(read, position):
 			numT += 1
 		elif char == "N":
 			numN += 1
-	#print str(len(revComp)) + "blachh"
 	temprev = read[position:position+INVERSION_LEN]
 	temprev = temprev[::-1]
-	#print temprev
 	for char in temprev:
 		if char == "A": 
 			revComp += "T"
@@ -84,7 +73,6 @@ def reverseCompliment(read, position):
 		elif char == "N":
 			revComp += "N"
 			numN += 1
-	#print str(len(revComp)) + "after middle for"
 	revComp += read[position+INVERSION_LEN:]
 	for char in read[position+INVERSION_LEN:]:
 		if char == "A":
@@ -103,11 +91,6 @@ def reverseCompliment(read, position):
 
 sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
 sequence = pickle.load(open("seqString.p", "rb"))
-#i = 0
-#print len("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT")
-#while i + INVERSION_LEN < READ_LEN:
-#	print(len(reverseCompliment("GAAGCTCTTACTTTGCGACCTTTCGCCATCAACTAACGATTCTGTCAAAAACTGACGCGTTGGATGAGGAGAAGTGGCTTAATATGCTTGGCACGTTCGT", i)))
-#	i += 1
 
 for line in sys.stdin:
 	line.strip("\n")
