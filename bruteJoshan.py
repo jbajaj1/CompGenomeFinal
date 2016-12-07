@@ -19,6 +19,7 @@ def findMicroInversions(read):
 	global numC
 	global numN
 	global INVERSION_LEN
+	INVERSION_LEN = 100
 	while INVERSION_LEN >= 15:
 
 		position = 0
