@@ -4,6 +4,8 @@ import os
 import getopt
 import pickle
 import time
+import thread
+from multiprocessing import Pool
 
 numA = 0
 numC = 0
@@ -17,6 +19,7 @@ READ_LEN = 100
 MAX_N = 2
 found = False
 def findMicroInversions(read):
+	startRead = time.time()
 	global numG
 	global numA
 	global numT
@@ -28,9 +31,15 @@ def findMicroInversions(read):
 	global INVERSION_LEN
 	found = False
 	INVERSION_LEN = 100
+	nextRead = False
 	while INVERSION_LEN >= MIN_INVERSION:
+		if nextRead:
+			break;
 		position = 0
+		skip = False
 		while position + INVERSION_LEN <= READ_LEN:
+			if skip:
+				break
 			numA = 0
 			numC = 0
 			numG = 0
@@ -44,7 +53,9 @@ def findMicroInversions(read):
 			elif invN > 0 and invN <= MAX_N:
 				result = nHandling(revComp, revComp, invN, numA, numC, numG, numT, numN, invN, position)
 				if found is True:
-					return 0
+					nextRead = True
+					break
+
 			for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
 				if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
 					print("The following contains a microinversion: " + read.strip("\n"))
@@ -52,9 +63,13 @@ def findMicroInversions(read):
 					print("It matches with the read that starts at position " + str(element))
 					print("The microinversion occurs at character position " + str(position) + " in the read")
 					print("It matches to: " + sequence[element:element+READ_LEN])
-					return 0
-			position += 1	
+					nextRead = True
+					skip = True
+					break
+			position += 1
 		INVERSION_LEN -= 1
+	endRead = time.time()
+	print("This read took " + str(endRead - startRead) + " seconds to process.")
 	'''
 	VERSION WITHOUT VARYING INVERSION LENGTH
 	position = 0
@@ -133,7 +148,7 @@ def reverseCompliment(read, position):
 		elif char == "C":
 			numC += 1
 		elif char == "G":
-			numG += 1 
+			numG += 1
 		elif char == "T":
 			numT += 1
 		elif char == "N":
@@ -141,7 +156,7 @@ def reverseCompliment(read, position):
 	temprev = read[position:position+INVERSION_LEN]
 	temprev = temprev[::-1]
 	for char in temprev:
-		if char == "A": 
+		if char == "A":
 			revComp += "T"
 			numT += 1
 		elif char == "C":
@@ -164,7 +179,7 @@ def reverseCompliment(read, position):
 		elif char == "C":
 			numC += 1
 		elif char == "G":
-			numG += 1 
+			numG += 1
 		elif char == "T":
 			numT += 1
 		elif char == "N":
@@ -176,11 +191,16 @@ start = time.time()
 sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
 sequence = pickle.load(open("seqString.p", "rb"))
 #start = time.time()   <--- Talk to team about this
+reads = []
+
 for line in sys.stdin:
 	line.strip("\n")
-	startRead = time.time()
-	findMicroInversions(line.upper())
-	endRead = time.time()
-	print("This read took " + str(endRead - startRead) + " seconds to process.")
+	reads.append(line.upper())
+	#startRead = time.time()
+	#findMicroInversions(line.upper())
+	#endRead = time.time()
+	#print("This read took " + str(endRead - startRead) + " seconds to process.")
+pool = Pool(4)
+pool.map(findMicroInversions, reads)
 end = time.time()
 print("This program took " + str(end-start) + " seconds to run.")
