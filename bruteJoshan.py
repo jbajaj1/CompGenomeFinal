@@ -293,8 +293,6 @@ def findMicroInversions(read):
 				numT -= 2
 				numN +=2
 			for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-			#if (numA, numC, numG, numT, numN) in sequencesDic:
-			#	for element in sequencesDic[(numA, numC, numG, numT, numN)]:
 				if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
 					print("The following contains a microinversion: " + read.strip("\n"))
 					print("The inversion length is " + str(INVERSION_LEN))
