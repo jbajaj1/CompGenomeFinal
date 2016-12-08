@@ -213,7 +213,7 @@ def findMicroInversions(read):
 						print("The inversion length is " + str(INVERSION_LEN))
 						print("It matches with the read that starts at position " + str(element))
 						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
+						print("It matches to: " + sequence[element:element+READ_LEN] + "\n\n")
 						return 0
 				numC -= 1
 				revCompGG = read[0:position] + revCompG[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
