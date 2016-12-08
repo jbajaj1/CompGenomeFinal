@@ -14,6 +14,8 @@ invN = 0
 INVERSION_LEN = 100
 MIN_INVERSION = 15
 READ_LEN = 100
+MAX_N = 2
+found = False
 def findMicroInversions(read):
 	global numG
 	global numA
@@ -21,7 +23,10 @@ def findMicroInversions(read):
 	global numC
 	global numN
 	global invN
+	global MAX_N
+	global found
 	global INVERSION_LEN
+	found = False
 	INVERSION_LEN = 100
 	while INVERSION_LEN >= MIN_INVERSION:
 		position = 0
@@ -33,265 +38,13 @@ def findMicroInversions(read):
 			numN = 0
 			invN = 0
 			revComp = reverseCompliment(read, position)
-			if invN > 2:
+			if invN > MAX_N:
 				position += 1
 				break
-			elif invN == 1:
-				numN -= 1 
-				revCompA = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:]
-				numA += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompA.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to an A")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numA -=1
-				revCompC = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:]
-				numC += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompC.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a C")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numC -= 1
-				revCompG = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
-				numG += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompG.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a G")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numG -= 1
-				revCompT = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:]
-				numT += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompT.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a T")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numN += 1
-			elif invN == 2:
-				numN -= 2 
-				revCompA = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:]
-				numA += 1
-				revCompAA = read[0:position] + revCompA[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:]
-				numA += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompAA.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("Two Ns were converted to As")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numA -= 1
-				revCompAC = read[0:position] + revCompA[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:]
-				numC += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompAC.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to an A and one to a C")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numC -= 1
-				revCompAG = read[0:position] + revCompA[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
-				numG += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompAG.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to an A and one to a G")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numG -= 1
-				revCompAT = read[0:position] + revCompA[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:]
-				numT += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompAT.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to an A and one to a T")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numT -= 1
-				numA -=1
-				revCompC = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:]
-				numC += 1
-				revCompCA = read[0:position] + revCompC[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:]
-				numA += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompCA.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a C and one to an A")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numA -= 1
-				revCompCC = read[0:position] + revCompC[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:]
-				numC += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompCC.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("Two Ns were converted to Cs")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numC -= 1
-				revCompCG = read[0:position] + revCompC[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
-				numG += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompCG.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a C and one to a G")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numG -= 1
-				revCompCT = read[0:position] + revCompC[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:]
-				numT += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompCT.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a C and one to a T")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numT -= 1
-				numC -=1
-				revCompG = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
-				numG += 1
-				revCompGA = read[0:position] + revCompG[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:]
-				numA += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompGA.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a G and one to an A")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numA -= 1
-				revCompGC = read[0:position] + revCompG[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:]
-				numC += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompGC.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a G and one to a C")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN] + "\n\n")
-						return 0
-				numC -= 1
-				revCompGG = read[0:position] + revCompG[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
-				numG += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompGG.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("Two Ns were converted to Gs")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numG -= 1
-				revCompGT = read[0:position] + revCompG[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:]
-				numT += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompGT.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a G and one to a T")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numT -= 1
-				numG -=1
-				revCompT = read[0:position] + revComp[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:]
-				numT += 1
-				revCompTA = read[0:position] + revCompT[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:]
-				numA += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompTA.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a T and one to an A")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numA -= 1
-				revCompTC = read[0:position] + revCompT[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:]
-				numC += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompTC.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a T and one to a C")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numC -= 1
-				revCompTG = read[0:position] + revCompT[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:]
-				numG += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompTG.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("One N was converted to a T and one to a G")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numG -= 1
-				revCompTT = read[0:position] + revCompT[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:]
-				numT += 1
-				for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
-					if sequence[element:element+READ_LEN].strip("\n") == revCompTT.strip("\n"):
-						print("The following contains a microinversion: " + read.strip("\n"))
-						print("Two Ns were converted to Ts")
-						print("The inversion length is " + str(INVERSION_LEN))
-						print("It matches with the read that starts at position " + str(element))
-						print("The microinversion occurs at character position " + str(position) + " in the read")
-						print("It matches to: " + sequence[element:element+READ_LEN])
-						return 0
-				numT -= 2
-				numN +=2
+			elif invN > 0 and invN <= MAX_N:
+				result = nHandling(revComp, revComp, invN, numA, numC, numG, numT, numN, invN, position)
+				if found is True:
+					return 0
 			for element in sequencesDic.get((numA, numC, numG, numT, numN), []):
 				if sequence[element:element+READ_LEN].strip("\n") == revComp.strip("\n"):
 					print("The following contains a microinversion: " + read.strip("\n"))
@@ -323,6 +76,46 @@ def findMicroInversions(read):
 					#return statement -- discuss with group if we should have
 		position += 1
 	'''
+
+
+def nHandling(read, unchangedRead, Ns, As, Cs, Gs, Ts, otherNs, origNs, position):
+	global found
+	global numA
+	global numC
+	global numG
+	global numT
+	if found == True:
+		return 0
+	if Ns > 0:
+		nHandling(read[0:position] + read[position:position+INVERSION_LEN].replace("N", "A", 1) + read[position+INVERSION_LEN:], unchangedRead, Ns - 1, As + 1, Cs, Gs, Ts, otherNs - 1, origNs, position)
+		nHandling(read[0:position] + read[position:position+INVERSION_LEN].replace("N", "C", 1) + read[position+INVERSION_LEN:], unchangedRead, Ns - 1, As, Cs + 1, Gs, Ts, otherNs - 1, origNs, position)
+		nHandling(read[0:position] + read[position:position+INVERSION_LEN].replace("N", "G", 1) + read[position+INVERSION_LEN:], unchangedRead, Ns - 1, As, Cs, Gs + 1, Ts, otherNs - 1, origNs, position)
+		nHandling(read[0:position] + read[position:position+INVERSION_LEN].replace("N", "T", 1) + read[position+INVERSION_LEN:], unchangedRead, Ns - 1, As, Cs, Gs, Ts + 1, otherNs - 1, origNs, position)
+	if found == True:
+		return 0
+	for element in sequencesDic.get((As, Cs, Gs, Ts, otherNs), []):
+		if sequence[element:element+READ_LEN].strip("\n") == read.strip("\n"):
+			print("The following may contain a microinversion: " + unchangedRead.strip("\n"))
+			print("It contained " + str(origNs) + " N(s) that were converted into different nucleotides")
+			if As > numA:
+				diff = As - numA
+				print(str(diff) + " N(s) were converted to A(s)")
+			if Cs > numC:
+				diff = Cs - numC
+				print(str(diff) + " N(s) were converted to C(s)")
+			if Gs > numG:
+				diff = Gs - numG
+				print(str(diff) + " N(s) were converted to G(s)")
+			if Ts > numT:
+				diff = Ts - numT
+				print(str(diff) + " N(s) were converted to T(s)")
+			print("The inversion length is " + str(INVERSION_LEN))
+			print("It matches with the read that starts at position " + str(element))
+			print("The microinversion occurs at character position " + str(position) + " in the read")
+			print("It matches to: " + sequence[element:element+READ_LEN])
+			found = True
+	if found == True:
+		return 0
 
 
 def reverseCompliment(read, position):
@@ -379,10 +172,10 @@ def reverseCompliment(read, position):
 	return revComp
 
 
-
+start = time.time()
 sequencesDic = pickle.load(open("sequencesDic.p", "rb"))
 sequence = pickle.load(open("seqString.p", "rb"))
-start = time.time()
+#start = time.time()   <--- Talk to team about this
 for line in sys.stdin:
 	line.strip("\n")
 	startRead = time.time()
