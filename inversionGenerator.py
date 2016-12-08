@@ -4,7 +4,7 @@ import sys
 import random
 
 READ_LENGTH = 100
-NUM_READS = 2 
+NUM_READS = 150
 MIN_INVERSION_LENGTH = 15
 MAX_INVERSION_LENGTH = 100
 
@@ -34,7 +34,7 @@ def generate_inversions(seq, numInversions, readStart):
     global MAX_INVERSION_LENGTH
     global READ_LENGTH
 
-    compliments = {'A':'T','T':'A','C':'G','G':'C'} # Reverse complement map
+    compliments = {'A':'T','T':'A','C':'G','G':'C', 'N':'N'} # Reverse complement map
     invertedSegments = [] # Keep track of inverted segments to prevent overlapping inversions
 
     for i in range(numInversions):
