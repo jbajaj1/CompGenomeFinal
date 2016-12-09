@@ -95,10 +95,6 @@ def findMicroInversions(read):
 
 def nHandling(read, unchangedRead, Ns, As, Cs, Gs, Ts, otherNs, origNs, position):
 	global found
-	global numA
-	global numC
-	global numG
-	global numT
 	if found == True:
 		return 0
 	if Ns > 0:
@@ -112,18 +108,6 @@ def nHandling(read, unchangedRead, Ns, As, Cs, Gs, Ts, otherNs, origNs, position
 		if sequence[element:element+READ_LEN].strip("\n") == read.strip("\n"):
 			print("The following may contain a microinversion: " + unchangedRead.strip("\n"))
 			print("It contained " + str(origNs) + " N(s) that were converted into different nucleotides")
-			if As > numA:
-				diff = As - numA
-				print(str(diff) + " N(s) were converted to A(s)")
-			if Cs > numC:
-				diff = Cs - numC
-				print(str(diff) + " N(s) were converted to C(s)")
-			if Gs > numG:
-				diff = Gs - numG
-				print(str(diff) + " N(s) were converted to G(s)")
-			if Ts > numT:
-				diff = Ts - numT
-				print(str(diff) + " N(s) were converted to T(s)")
 			print("The inversion length is " + str(INVERSION_LEN))
 			print("It matches with the read that starts at position " + str(element))
 			print("The microinversion occurs at character position " + str(position) + " in the read")
