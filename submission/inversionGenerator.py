@@ -65,8 +65,6 @@ data = parse_input()
 reads, indecies = simulate_reads()
 #print(reads, indecies)
 
-#print (data[200:300])
-
 for i in range(len(reads)):
     read = reads[i]
     index = indecies[i]
