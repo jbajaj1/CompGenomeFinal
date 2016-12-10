@@ -1,0 +1,9 @@
+echo STEP 1: Create and activate virtualenv.
+if [ -d "venv" ]; then
+        echo Virtualenv already exists, activating it...
+else
+        virtualenv -p python3 venv
+fi
+source venv/bin/activate
+echo STEP 2: Install requirements.
+pip install biopython
