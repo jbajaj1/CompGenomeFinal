@@ -2,7 +2,7 @@ import time
 from random import randint
 
 SEQUENCE_SIZE = 50000
-
+#generates reads 
 def generateSeq():
 	seq = ">Randomly Generated Sequence\n"
 	choices = ""
