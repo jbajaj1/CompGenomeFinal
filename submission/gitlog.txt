@@ -1,0 +1,547 @@
+commit 392f3ff2f2c38bae21fbdd5233f3f51719a06127
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Sat Dec 10 00:01:16 2016 -0500
+
+    Rename 100ktricky.output to 100ktformatted.output
+
+commit 1c3fd3aaa0ef0a550fcfaf93eda9c196291e21ee
+Merge: 1becd3d 575e7c2
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Sat Dec 10 00:00:08 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit 575e7c2ee0374d7d025767a845a3af725d3bb2bb
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Sat Dec 10 00:00:06 2016 -0500
+
+    Rename slowoutput.txt to 50millionSeq1kReadsOutput.txt
+
+commit 92b573a9638a8875d7902b838e6a46b90f21d598
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 23:59:30 2016 -0500
+
+    Rename slowReads.txt to 50milSeq1kReads.txt
+
+commit 1becd3da6e2a55144651a8079f08974a5550e9f2
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Fri Dec 9 23:59:26 2016 -0500
+
+    remove and modifty files
+
+commit 9ac48da01bacfb7cb785bd6100522d726b9c66e3
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Fri Dec 9 23:58:09 2016 -0500
+
+    modify run.sh file
+
+commit 985ebd4e1f413b57ae1a9ea68cfc41567648684f
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Fri Dec 9 23:56:25 2016 -0500
+
+    Rename some files
+
+commit fccb7dde6cb8778a90ff40685c683d9d21101124
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Fri Dec 9 23:54:02 2016 -0500
+
+    Add some data files
+
+commit b1028380b92451891cac114ea6c43fc17cc314a0
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 21:30:00 2016 -0500
+
+    Chromosome 21
+
+commit bc80443cb527e54b34df13028475e26be21f7acd
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Fri Dec 9 21:13:37 2016 -0500
+
+    commented generateSeq.py
+
+commit e8a6717ef80037373cad7c60e67940fbc9f4e672
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Fri Dec 9 20:40:36 2016 -0500
+
+    commented findMicroInversions.py
+
+commit 46934801a16048b3fd2bf61f980c7acc02824ed0
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 20:10:24 2016 -0500
+
+    Data put in one place
+
+commit 3b790a8b145bb46795a4d1031f3d5df090998b6c
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 20:00:45 2016 -0500
+
+    for graphing purposes
+
+commit 07e1d76a4a68aa9621269ca047f42d91c4d21e6a
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:35:04 2016 -0500
+
+    100k output
+
+commit 8f8b5e378c196a43c36d46d5663d95f9e60ce7e1
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:28:06 2016 -0500
+
+    moving file
+
+commit 7ddf921c076bd4f42da20d31bbd36fcaa6967590
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:23:24 2016 -0500
+
+    oneeb help my soul
+
+commit 580b3abde735e9a2350db77cd18049bc878a3156
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:18:17 2016 -0500
+
+    cleanup
+
+commit 58f6708d86982631cb6074db39c3afa1b0081f31
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:16:26 2016 -0500
+
+    Organizing
+
+commit da9f8914e18a8cb46954729abbdfa499da910d1f
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:10:46 2016 -0500
+
+    making folders
+
+commit eb6266efbc187a5676ac034cbfc5b63cd90d4def
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:07:28 2016 -0500
+
+    Delete reads.txt
+
+commit d634f95ee3fb7bd4bb4f6b8d2c637abb1368a198
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:06:56 2016 -0500
+
+    Delete seqString.p
+
+commit 209430c94a0ce131bd30ecaeda8a05bbf910a615
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:05:50 2016 -0500
+
+    Delete sequencesDic.p
+
+commit ddbacc203b7d188d84e672095648458c574ecfbd
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:02:07 2016 -0500
+
+    Rename preprocessSeqB.py to inEffPreprocess.py
+
+commit 65dd87d7a3b021ea5395cf22bee2739656df97ad
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:01:49 2016 -0500
+
+    Renamed
+
+commit 4908eff4bbd0e6520a3837d756407eb5d7b6ef4a
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:01:13 2016 -0500
+
+    Renamed
+
+commit 80d5f57d6a6e824c902295a1275741b17faf1f89
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 19:00:09 2016 -0500
+
+    Final version
+
+commit 1b34fc1f7075d514ef0c57c1318364d9a6153a2d
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Fri Dec 9 17:07:54 2016 -0500
+
+    Removed part of N handling because of multithreading
+
+commit 060741c6b8aafec5cbda6d880e79d63b24ff8395
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Thu Dec 8 18:30:27 2016 -0500
+
+    Parallelized bruteJoshan
+
+commit 020519ac3a07475e68e21704b50a2a4acec82615
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Dec 8 15:19:05 2016 -0500
+
+    generateSeq now has a 1/401 chance of adding an N. Inversion Generator can handle Ns
+
+commit 6356966564d3a77969dca377470f219025558d09
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Dec 8 13:55:21 2016 -0500
+
+    Removed horrible N handling and added recursion N handling
+
+commit fd79c4b1900fc08191662604f0bcc2921188c642
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Dec 8 05:48:20 2016 -0500
+
+    Ignore these for now, just an alternate way to solve the problem -- ended up doing really poorly
+
+commit ef016422b0e01e674d29233e01769335116686c7
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Dec 8 05:47:37 2016 -0500
+
+    deleted some comments
+
+commit 5f137a55e2cbc1265e1d620d7ccbafa986272910
+Merge: 6c91d4c 78c0b27
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Dec 8 05:31:42 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit 6c91d4c5498e44d42cd4956d278ffe9f84d5ecd6
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Dec 8 05:30:34 2016 -0500
+
+    Added a very ugly way to handle Ns
+
+commit 78c0b2734ca90fce49f68d4302f70e96c44ff538
+Merge: 7fc1471 5b566a6
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Wed Dec 7 17:09:30 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit 7fc14719e3caecc25465a4c90740375c279a6eee
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Wed Dec 7 17:09:22 2016 -0500
+
+    Fix sequence input and stdout issues
+
+commit 5b566a688ff33c1a5949d46cdd800f350f83c6b4
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 16:56:27 2016 -0500
+
+    Edited some comments, fixed indent of pickle.dump
+
+commit b22b235bfa48b0b98595db2d1b8ef4773300f7d8
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Wed Dec 7 16:53:59 2016 -0500
+
+    Give up and make bash script
+
+commit 5b669097067b53a11f0fd10ca271eaa5befb21a1
+Merge: 26e09a3 032376b
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Wed Dec 7 16:45:15 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit 032376b49a4d4425ca68a47d530eb2e3e5a5b306
+Author: John <johnd.wilson9@gmail.com>
+Date:   Wed Dec 7 16:44:45 2016 -0500
+
+    cleaned up inversion generator
+
+commit 26e09a35fb35520097a92d182e79b226f837b46d
+Merge: 8b74aca cc36bc7
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Wed Dec 7 16:42:35 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit 8b74acad8a932cf607f6bc679b11ed44e1a3156a
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Wed Dec 7 16:42:07 2016 -0500
+
+    Give up and make bash script
+
+commit cc36bc747a88ccc4241d73ad58f0e09b43fb87a3
+Author: John <johnd.wilson9@gmail.com>
+Date:   Wed Dec 7 16:12:50 2016 -0500
+
+    added global variables for flexibility
+
+commit 7d70d2553c8e78c1c108926bc0eb3c8689364ca5
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 15:49:03 2016 -0500
+
+    Program to generate a sequence
+
+commit 0889417e30a6fe63a1e1c02dcfdd2d5bc068d4a3
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Wed Dec 7 15:46:58 2016 -0500
+
+    commented preprocessSeq
+
+commit a2c034c2981ec0220616af2ae65b20afe348f19f
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 15:23:22 2016 -0500
+
+    Added timing
+
+commit 88fe425c01ad11a63daf1f3644cb0bbd1562ee14
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 15:16:38 2016 -0500
+
+    added time to preprocessing
+
+commit 5bba671e45bc55f8733e34699cd34428641d20ad
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 14:12:14 2016 -0500
+
+    Added return statement [need to discuss with group], added some global vars for clean code
+
+commit 53349329f8bfb9c3b2fd413c40c065cf5f8db53d
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 13:45:08 2016 -0500
+
+    sorry for spamming commits -- fixed a print statement
+
+commit 7ba0221bb99707d5c2e91c05dcf7fc5dd29ff59a
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 13:36:46 2016 -0500
+
+    added handling for multiple reads
+
+commit 15c431fc452c18a371656d3bf30714f1cd9d2560
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 13:31:52 2016 -0500
+
+    Fixed some print statements
+
+commit 8281e1068ec846d9b4b2103104fc4fdcbd45a370
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 12:03:41 2016 -0500
+
+    Gives us inversions of any size [tested with a few cases, will need more testing]
+
+commit 8035a880d326e5d295aec321914d3cacfcc2655a
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Wed Dec 7 11:10:54 2016 -0500
+
+    Code cleanup
+
+commit 288169200bf7848e1689d4e32d8413f11ec72241
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Tue Dec 6 18:18:00 2016 -0500
+
+    ALAS. IT IS DONE.
+
+commit a00bf0c8fbd1ca7872f12de0cce9f9d3b03d9fb1
+Merge: 24f4ee9 c959d15
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Tue Dec 6 17:53:03 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit c959d15fc2227fb4a82e75c5a9183de8e97e70b6
+Author: John <johnd.wilson9@gmail.com>
+Date:   Tue Dec 6 17:52:52 2016 -0500
+
+    tiny inversion generator
+
+commit 24f4ee9e313166535cbceef5cfe1a1e4993d9a03
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Tue Dec 6 17:52:50 2016 -0500
+
+    Changes to decrease read and inversion length for testing purposes
+
+commit 560990a1c344c6d0ced5aef6c7249064cd132a63
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Tue Dec 6 17:38:16 2016 -0500
+
+    Added a stupid colon that changed everything
+
+commit 2fbc2486af4ad27acfbb0b9ae6c288809159dd04
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Tue Dec 6 17:20:34 2016 -0500
+
+    Added global var
+
+commit da20909c15a76e72f377ffc590a01871b4cf9557
+Author: John <johnd.wilson9@gmail.com>
+Date:   Tue Dec 6 17:12:56 2016 -0500
+
+    updated inversion generator
+
+commit 79fcc48c7e0c01739c11fcd16d6fea62a8a1696f
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Tue Dec 6 17:06:29 2016 -0500
+
+    fix to brute force
+
+commit 25e84f38a1ea1598ab0f7085400d580281dad4fe
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Tue Dec 6 17:04:35 2016 -0500
+
+    Brute force method, not tested yet
+
+commit dab03ca2d68e79014d5df5d38c36b773f4aba7a5
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Tue Dec 6 16:42:27 2016 -0500
+
+    After discussion with Oneeb/John, changed dictionary to have len 100 instead of 40 for chunks
+
+commit f31d493248cfddc666d127189831a11bbb57e49c
+Merge: cb0580d 97a269f
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Tue Dec 6 16:15:19 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit cb0580dc07d39b6a16ddbe057eb1421753cfa8ff
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Tue Dec 6 16:14:07 2016 -0500
+
+    Converts sequence to upper
+
+commit 97a269f86bda35e73f5eef0129f937cc03220833
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Tue Dec 6 16:10:00 2016 -0500
+
+    Add a simple sanity check file for hash table
+
+commit 4123085a03a21f0f460a2f662ae1365fed24c258
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 22:12:20 2016 -0500
+
+    Updating files
+
+commit b7455cda6b87c5a60871c2aaa6c7b770dbd57cce
+Author: John <johnd.wilson9@gmail.com>
+Date:   Mon Dec 5 20:17:22 2016 -0500
+
+    updated inversion simulator
+
+commit 957cfc0c6b292fcb40d5107239d55d35f50fec29
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Mon Dec 5 19:56:26 2016 -0500
+
+    added brute
+
+commit 24e92e44711dcf52f1404b1035a7a31069219180
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Mon Dec 5 18:00:18 2016 -0500
+
+    added gitignore
+
+commit 7dec3f2fcd29df0d715c275a32f5287edc23fbbf
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Mon Dec 5 17:48:23 2016 -0500
+
+    finally fixed my stuff
+
+commit 8d4f8ef5bafe0fdc4d6ddc61978146238c309841
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 17:18:31 2016 -0500
+
+    for oneeb to open pickle
+
+commit 6fec4775a1a53f1108ada02ff2de3c1c915a5480
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 17:15:12 2016 -0500
+
+    preprocess, oneeb and I are testing
+
+commit 253b4319ff816a717d6a1804e4143ffbacc0d498
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 17:12:04 2016 -0500
+
+    for oneeb
+
+commit 61e089c6aa247d53543e0546cd88c03577e72d8c
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 17:10:05 2016 -0500
+
+    smaller file to test
+
+commit b89890d9a4a5ac60d04d02e7976f17fb59191340
+Merge: 23a145a 7d36b5b
+Author: John <johnd.wilson9@gmail.com>
+Date:   Mon Dec 5 15:31:15 2016 -0500
+
+    Merge branch 'master' of https://github.com/jbajaj1/CompGenomeFinal
+
+commit 23a145a31ad501c88cb8f0249dfc449ccc30d7a6
+Author: John <johnd.wilson9@gmail.com>
+Date:   Mon Dec 5 15:28:05 2016 -0500
+
+    Test sequence formatter
+
+commit 7d36b5ba29fd56275253b94aac8f8bd3b17818d2
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 15:08:06 2016 -0500
+
+    compressed genome
+
+commit 6a0850caf2068edf41b61868d9a16d52f8865f5e
+Author: John <johnd.wilson9@gmail.com>
+Date:   Mon Dec 5 15:06:31 2016 -0500
+
+    Updated file name
+
+commit 2bb9bfd82b4d82543acc46282ae673dcde5f8518
+Author: John <johnd.wilson9@gmail.com>
+Date:   Mon Dec 5 15:04:28 2016 -0500
+
+    Commiting the inversersion simulation generator
+
+commit 499799ad9311c6f1eb40f743149c78dc8bbe0cb6
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 14:55:18 2016 -0500
+
+    Preprocess File
+
+commit a7ed65da91daec89124fdbeb84b7352ce6e1001e
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 14:54:12 2016 -0500
+
+    renamed method
+
+commit 59a2ade8d97467aa425eb4b2cfa0f897a676cca1
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Mon Dec 5 14:35:07 2016 -0500
+
+    Starting the code file
+
+commit 4e17bcddfa1c262f4300d68314ccfcc2a25a71fc
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Oct 20 15:59:56 2016 -0400
+
+    Removing Test Files
+
+commit a2ad45a9901d1746c332c0f9304b41fb516fe5c8
+Author: John <johnd.wilson9@gmail.com>
+Date:   Thu Oct 20 14:47:16 2016 -0400
+
+    test message
+
+commit 0c5ac82a81a7856b44274d1883609ae58706f980
+Author: Dan Smillie <dansmillie96@gmail.com>
+Date:   Thu Oct 20 14:41:46 2016 -0400
+
+    added DanTest.txt
+
+commit 5a64800b5b9bf60323560e721ca0db904a3f3b08
+Author: Oneeb Malik <oneebmalik@Oneebs-MacBook-Pro.local>
+Date:   Thu Oct 20 14:40:18 2016 -0400
+
+    Oneeb text file
+
+commit c3fe289e92ca7ee10edee3d2ebfb34928bc9280c
+Author: jbajaj1 <jbajaj1@jhu.edu>
+Date:   Thu Oct 20 14:34:42 2016 -0400
+
+    Test
+
+commit 27213aeb4b85f4d51392d99cc1363ea80d94c5c3
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Oct 20 14:32:05 2016 -0400
+
+    another push
+
+commit 2dc4ef3cef0a42e974846d44607e565cf51b0003
+Author: Joshan Bajaj <jbajaj1@jhu.edu>
+Date:   Thu Oct 20 14:30:48 2016 -0400
+
+    first commit
