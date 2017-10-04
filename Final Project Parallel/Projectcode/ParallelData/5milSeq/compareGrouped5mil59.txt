@@ -1,0 +1,354 @@
+The following contains a microinversion: ACTACTTGTGGCGTTGCTTCAGGACTGCTCGCGCCAACGTATCGCGAGGTAACCATAGTGAGATCGAATAAGTGGGTCCCGAGGGGCGTCTGTGTCCATG
+The inversion length is 59
+It matches with the read that starts at position 4736014
+The microinversion occurs at character position 11 in the read
+It matches to: ACTACTTGTGGTATTCGATCTCACTATGGTTACCTCGCGATACGTTGGCGCGAGCAGTCCTGAAGCAACGAGTGGGTCCCGAGGGGCGTCTGTGTCCATG
+This read took 111.978806973 seconds to process.
+The following contains a microinversion: CTTACCAGCACACAATCCACCGTCTTTTACGCACGCTTGGCAGACGACGCTTCGGGGGGCAAACTTCTTGTCCGGGGAACTCCGCTAGGGGCAGACGATA
+The inversion length is 58
+It matches with the read that starts at position 251119
+The microinversion occurs at character position 1 in the read
+It matches to: CCCCCCCGAAGCGTCGTCTGCCAAGCGTGCGTAAAAGACGGTGGATTGTGTGCTGGTAACAAACTTCTTGTCCGGGGAACTCCGCTAGGGGCAGACGATA
+This read took 116.660750151 seconds to process.
+The following contains a microinversion: AGCCTGAGGTCACTCGGGTGTCCTAACGCGTACATTGGTAATAACGATGAGATGCCACCCCTATCATCATAGGAAACTAACACCTTATGCGATCACCGTA
+The inversion length is 32
+It matches with the read that starts at position 4232616
+The microinversion occurs at character position 59 in the read
+It matches to: AGCCTGAGGTCACTCGGGTGTCCTAACGCGTACATTGGTAATAACGATGAGATGCCACCCGCATAAGGTGTTAGTTTCCTATGATGATAGGATCACCGTA
+This read took 310.947569132 seconds to process.
+The following contains a microinversion: GAGCACAAATTGGTGGATCATTGACAATTTGCCCCCAGCTCTGATCGATTCTGGGGCCATCCGAATGTTCGAAAAAGACGTCACCTTCGGCGTTGACTGT
+The inversion length is 97
+It matches with the read that starts at position 823132
+The microinversion occurs at character position 0 in the read
+It matches to: GTCAACGCCGAAGGTGACGTCTTTTTCGAACATTCGGATGGCCCCAGAATCGATCAGAGCTGGGGGCAAATTGTCAATGATCCACCAATTTGTGCTCTGT
+This read took 0.900490999222 seconds to process.
+The following contains a microinversion: GACATCTGAACATGTACAGAGCTTATCCTTGAACGCGTCATATCGGTAAATGAGAAATTACTGAGCCTACAACTATATACCGCCATAGGTAGCGTCTGTT
+The inversion length is 54
+It matches with the read that starts at position 2025356
+The microinversion occurs at character position 37 in the read
+It matches to: GACATCTGAACATGTACAGAGCTTATCCTTGAACGCGTACCTATGGCGGTATATAGTTGTAGGCTCAGTAATTTCTCATTTACCGATATGAGCGTCTGTT
+This read took 144.652354956 seconds to process.
+The following contains a microinversion: TACGACGACTAACAAACGATAGCAAGCGCAATATCTGTGATCAGTGTCAACGGACACAGGGTCACACATATAACGAAGCGGGACAACAGCCCGTAGAAAC
+The inversion length is 49
+It matches with the read that starts at position 2321081
+The microinversion occurs at character position 32 in the read
+It matches to: TACGACGACTAACAAACGATAGCAAGCGCAATCCGCTTCGTTATATGTGTGACCCTGTGTCCGTTGACACTGATCACAGATGACAACAGCCCGTAGAAAC
+This read took 176.042176962 seconds to process.
+The following contains a microinversion: GCGTCCGAGACCTCTATGCAGCAGCAATGGAACGTCCGGCGTGAATCCCCGGTGTTATGTCTGCAGGCGCAAACGGTGTTGCCTTTAGTCGATGTGTCGG
+The inversion length is 65
+It matches with the read that starts at position 3221800
+The microinversion occurs at character position 1 in the read
+It matches to: GCTGCAGACATAACACCGGGGATTCACGCCGGACGTTCCATTGCTGCTGCATAGAGGTCTCGGACGGCGCAAACGGTGTTGCCTTTAGTCGATGTGTCGG
+This read took 81.3468511105 seconds to process.
+The following contains a microinversion: CAGGTACCCTGAATCACGACACCACATGAGCGGGTCCTTAGCGCTAAATCCGCGAACCTACAACGCTTGTGCGTGGGCAAGAAAGTCGTGGTCTTCTTGG
+The inversion length is 58
+It matches with the read that starts at position 3691518
+The microinversion occurs at character position 1 in the read
+It matches to: CAGGTTCGCGGATTTAGCGCTAAGGACCCGCTCATGTGGTGTCGTGATTCAGGGTACCTACAACGCTTGTGCGTGGGCAAGAAAGTCGTGGTCTTCTTGG
+This read took 116.550266027 seconds to process.
+The following contains a microinversion: CGCAATATTTGTCCCAAATATGATAGCAGATCAGTGGCACGGCTCAGTGCCGTGATCGGCTGAGGTCTTTCCCAATGGGGGTACTAGTCTCGTTTAAATC
+The inversion length is 59
+It matches with the read that starts at position 2403234
+The microinversion occurs at character position 41 in the read
+It matches to: CGCAATATTTGTCCCAAATATGATAGCAGATCAGTGGCACGGATTTAAACGAGACTAGTACCCCCATTGGGAAAGACCTCAGCCGATCACGGCACTGAGC
+This read took 116.635458946 seconds to process.
+The following contains a microinversion: GGCGCATTAACCGACCAGATTAATTCAATGACGTAGTAGGATTAAACGGCCGCTCATTGCTATCCAGTGGGTGCTTCATTAAATATAGCGTGCGATGTGC
+The inversion length is 26
+It matches with the read that starts at position 1004734
+The microinversion occurs at character position 2 in the read
+It matches to: GGTTGAATTAATCTGGTCGGTTAATGCGTGACGTAGTAGGATTAAACGGCCGCTCATTGCTATCCAGTGGGTGCTTCATTAAATATAGCGTGCGATGTGC
+This read took 359.914641857 seconds to process.
+The following contains a microinversion: CAGAGCCTCTAGGTAGGGGGGCCTTACGAAGACAAGAATTTATACTCTATTATTTTGTCCCGAGTCAGTCGGGCAACATAGGGTGGATCGGTGTGGGTTC
+The inversion length is 73
+It matches with the read that starts at position 4617436
+The microinversion occurs at character position 27 in the read
+It matches to: CAGAGCCTCTAGGTAGGGGGGCCTTACGAACCCACACCGATCCACCCTATGTTGCCCGACTGACTCGGGACAAAATAATAGAGTATAAATTCTTGTCTTC
+This read took 52.4278609753 seconds to process.
+The following contains a microinversion: AGATCTCTGCGGTGCCCCAGGCCTGCTATGGCTAGATTTCTCTCATGTGCATCATTTGGCCCCGCGCTGACAGGGACCAAGTAATCACCGGCCTTCACTT
+The inversion length is 94
+It matches with the read that starts at position 1163059
+The microinversion occurs at character position 3 in the read
+It matches to: AGATGAAGGCCGGTGATTACTTGGTCCCTGTCAGCGCGGGGCCAAATGATGCACATGAGAGAAATCTAGCCATAGCAGGCCTGGGGCACCGCAGAGACTT
+This read took 3.23610901833 seconds to process.
+The following contains a microinversion: ATCCGGAGATCGATCTTAATGCCAAGTGGCGTGACCTCGACCATCGCAGACGGCATGGTTGTTTAGTAACAGACTTTGCTTCGGTGGATCCTCCTTGTGA
+The inversion length is 60
+It matches with the read that starts at position 3824990
+The microinversion occurs at character position 37 in the read
+It matches to: ATCCGGAGATCGATCTTAATGCCAAGTGGCGTGACCTCAAGGAGGATCCACCGAAGCAAAGTCTGTTACTAAACAACCATGCCGTCTGCGATGGTCGTGA
+This read took 110.558362961 seconds to process.
+The following contains a microinversion: TTCGCCCGTTGAACAAAAACCGTTGCAAGAGTGTGAACCAAGGATTGCCCTTACATTGTGCCCCTTTTCGTGGATGCATCTATAGATACACTGCACGTAG
+The inversion length is 80
+It matches with the read that starts at position 3640888
+The microinversion occurs at character position 7 in the read
+It matches to: TTCGCCCATCTATAGATGCATCCACGAAAAGGGGCACAATGTAAGGGCAATCCTTGGTTCACACTCTTGCAACGGTTTTTGTTCAACACACTGCACGTAG
+This read took 28.1373150349 seconds to process.
+The following contains a microinversion: AATAGTGCTATGTTGACAAACTCGCTGAACGCGGATAGCGCCAGATTAGTGCTGGGTATCTCGCTCAATGATAGGCTGCCAGAAGTCTAAGGCCGCACCA
+The inversion length is 33
+It matches with the read that starts at position 3542873
+The microinversion occurs at character position 18 in the read
+It matches to: AATAGTGCTATGTTGACACACTAATCTGGCGCTATCCGCGTTCAGCGAGTTCTGGGTATCTCGCTCAATGATAGGCTGCCAGAAGTCTAAGGCCGCACCA
+This read took 296.803342104 seconds to process.
+The following contains a microinversion: CTGCGAGATATGGGCTTTACAGCGGCTGCATGCCATATAGTTCGACCACAGCGTTACTGGTATTACTAGAAACGGGCCCAGTGTCCCATCCTCTTGGCGA
+The inversion length is 87
+It matches with the read that starts at position 2023443
+The microinversion occurs at character position 1 in the read
+It matches to: CTGGGACACTGGGCCCGTTTCTAGTAATACCAGTAACGCTGTGGTCGAACTATATGGCATGCAGCCGCTGTAAAGCCCATATCTCGCATCCTCTTGGCGA
+This read took 11.9862449169 seconds to process.
+The following contains a microinversion: ATTCTATATACCAAGGAGGAACACATTTTGAAAGATGGGCGCTATGAGCACTAAGACGGGCGATTCTCTAACGTGTGGCTTTCTCGCGTTGTACGCTCGA
+The inversion length is 90
+It matches with the read that starts at position 4000494
+The microinversion occurs at character position 7 in the read
+It matches to: ATTCTATAGCGTACAACGCGAGAAAGCCACACGTTAGAGAATCGCCCGTCTTAGTGCTCATAGCGCCCATCTTTCAAAATGTGTTCCTCCTTGGTATCGA
+This read took 8.09454393387 seconds to process.
+The following contains a microinversion: TCACTTGACTGACCGAGGGAACTTCAAGAGCTGCGCAATCGTACAGGGGGGCCGCTTGGACTCCAAGACCTAGCTGTCTAGGCCCTACTATATTAAATCC
+The inversion length is 74
+It matches with the read that starts at position 4822002
+The microinversion occurs at character position 21 in the read
+It matches to: TCACTTGACTGACCGAGGGAATAATATAGTAGGGCCTAGACAGCTAGGTCTTGGAGTCCAAGCGGCCCCCCTGTACGATTGCGCAGCTCTTGAAGAATCC
+This read took 48.1020789146 seconds to process.
+The following contains a microinversion: TGATCTATAGGCGGGATTGTCCAAGTTGGTGGCAGCGGAAACCGGCATGCGCCACGGCGAGTATAAGAGAGCACATAACGACACGATACCTCGACCAGTC
+The inversion length is 29
+It matches with the read that starts at position 3234251
+The microinversion occurs at character position 32 in the read
+It matches to: TGATCTATAGGCGGGATTGTCCAAGTTGGTGGCTCGCCGTGGCGCATGCCGGTTTCCGCTGTATAAGAGAGCACATAACGACACGATACCTCGACCAGTC
+This read took 332.52956295 seconds to process.
+The following contains a microinversion: TGAGAAGCGCTCTAATTGGGTATGTTTCACATGCGTCCCCTTTGCTGAGAGTTATCTATAGTACACCCCAGGCGCCTACAGTCATAGACCATGTTAGAAT
+The inversion length is 61
+It matches with the read that starts at position 2418989
+The microinversion occurs at character position 27 in the read
+It matches to: TGAGAAGCGCTCTAATTGGGTATGTTTTCTATGACTGTAGGCGCCTGGGGTGTACTATAGATAACTCTCAGCAAAGGGGACGCATGTGCCATGTTAGAAT
+This read took 103.969777822 seconds to process.
+The following contains a microinversion: TACTTCGTTAAATACTTCAACTACGCGAGGACCAGAATGTGGTCTAATGGACGAAGACATCCACATGCCAAAAGTGATACGGAGACAATCCTCTAATACA
+The inversion length is 20
+It matches with the read that starts at position 2977647
+The microinversion occurs at character position 24 in the read
+It matches to: TACTTCGTTAAATACTTCAACTACGACCACATTCTGGTCCTCGCTAATGGACGAAGACATCCACATGCCAAAAGTGATACGGAGACAATCCTCTAATACA
+This read took 420.961055994 seconds to process.
+The following contains a microinversion: GGAGCTACCAAGCCGCGCCCTAATTAAAAGGAGCATTGCTAAAGGTGTGCTAGTGCCATCGCACGATTGCGTCTGGAGCGAAGCCACTCGCCATCTTCCA
+The inversion length is 39
+It matches with the read that starts at position 583729
+The microinversion occurs at character position 8 in the read
+It matches to: GGAGCTACCACCTTTAGCAATGCTCCTTTTAATTAGGGCGCGGCTTGTGCTAGTGCCATCGCACGATTGCGTCTGGAGCGAAGCCACTCGCCATCTTCCA
+This read took 245.889962912 seconds to process.
+The following contains a microinversion: TGAACGCCGTCCGTTTCCTATCCGACCCTAACCTAACCCGTAGTTGTATACGCAACTAGTTCGAAAACACATGGAACCGAATCGAGCCGATTAGCTTATT
+The inversion length is 78
+It matches with the read that starts at position 2686076
+The microinversion occurs at character position 11 in the read
+It matches to: TGAACGCCGTCCGGCTCGATTCGGTTCCATGTGTTTTCGAACTAGTTGCGTATACAACTACGGGTTAGGTTAGGGTCGGATAGGAAACGATTAGCTTATT
+This read took 34.217015028 seconds to process.
+The following contains a microinversion: GCCGGGATTAATTTAGGTCGCCTTAATGCTGAAGGCAATTCACCGTTCCTCTGCATAATCTATAAGAATCCCCATGCTCGTCCGGAACTGAGTAGTCCGC
+The inversion length is 62
+It matches with the read that starts at position 780302
+The microinversion occurs at character position 32 in the read
+It matches to: GCCGGGATTAATTTAGGTCGCCTTAATGCTGATACTCAGTTCCGGACGAGCATGGGGATTCTTATAGATTATGCAGAGGAACGGTGAATTGCCTGTCCGC
+This read took 100.114008904 seconds to process.
+The following contains a microinversion: ACAGTTCTCGCAAACGTGCCGCGCAAATTACATAGAGGGATGTAAAACGACCCATTGAACACCACGGGTCATTGGCTCTTGTCTTCTAGGGGACTTGCCA
+The inversion length is 36
+It matches with the read that starts at position 3580855
+The microinversion occurs at character position 54 in the read
+It matches to: ACAGTTCTCGCAAACGTGCCGCGCAAATTACATAGAGGGATGTAAAACGACCCACCTAGAAGACAAGAGCCAATGACCCGTGGTGTTCAAGGACTTGCCA
+This read took 275.869587898 seconds to process.
+The following contains a microinversion: AAACTCACATCGACGGAATTGCTAGCCCGACCGCGTATCCCTATAGGCCGGAAGACAGAAAGACCCGGAGAAGACGGCAGGTCCATGTTCTGGAGCCAAC
+The inversion length is 86
+It matches with the read that starts at position 4373849
+The microinversion occurs at character position 9 in the read
+It matches to: AAACTCACACTCCAGAACATGGACCTGCCGTCTTCTCCGGGTCTTTCTGTCTTCCGGCCTATAGGGATACGCGGTCGGGCTAGCAATTCCGTCGACCAAC
+This read took 14.8322379589 seconds to process.
+The following contains a microinversion: AAGTTCAGTTGAATCTAAGTGTGAAGCCCCACATCTGTTACTGTGCTTTTTCGTCATTTCAGGGCCATCAAAGGGCCTGAGAAGAACCTTACGCGCTCGT
+The inversion length is 25
+It matches with the read that starts at position 3123632
+The microinversion occurs at character position 21 in the read
+It matches to: AAGTTCAGTTGAATCTAAGTGGCACAGTAACAGATGTGGGGCTTCATTTTTCGTCATTTCAGGGCCATCAAAGGGCCTGAGAAGAACCTTACGCGCTCGT
+This read took 372.003015995 seconds to process.
+The following contains a microinversion: CGGCGTGTAGGCCTTTGTACCGTCTTCGCCATTGGGAATATGAAGCCGTGCAGATTCGCAGGAACAGTCTACTCTCCGCCGAAACTCTGGACCTAGGGCT
+The inversion length is 30
+It matches with the read that starts at position 4484399
+The microinversion occurs at character position 7 in the read
+It matches to: CGGCGTGTCCCAATGGCGAAGACGGTACAAAGGCCTAATATGAAGCCGTGCAGATTCGCAGGAACAGTCTACTCTCCGCCGAAACTCTGGACCTAGGGCT
+This read took 323.424723148 seconds to process.
+The following contains a microinversion: CCAATAAATGCGCAGTTTTGGAGGTTGACACACGCCAGCGTGAAGTATTAAGGTGCACGAGTCGCTGTTTGCAGAAGGGTTGTTGATAGAGACCATAGTC
+The inversion length is 83
+It matches with the read that starts at position 3957686
+The microinversion occurs at character position 7 in the read
+It matches to: CCAATAATCTATCAACAACCCTTCTGCAAACAGCGACTCGTGCACCTTAATACTTCACGCTGGCGTGTGTCAACCTCCAAAACTGCGCATGACCATAGTC
+This read took 20.7280700207 seconds to process.
+The following contains a microinversion: GCACTGAAGACAATACCTGCACGGCGAGACTGTTACTGGGGAACTCCAGTACGATTTCATTCCGCACTTAGGACGCCCCAAATACTAAAGGCATTCATGG
+The inversion length is 87
+It matches with the read that starts at position 2081825
+The microinversion occurs at character position 8 in the read
+It matches to: GCACTGAAAATGCCTTTAGTATTTGGGGCGTCCTAAGTGCGGAATGAAATCGTACTGGAGTTCCCCAGTAACAGTCTCGCCGTGCAGGTATTGTCCATGG
+This read took 13.1041610241 seconds to process.
+The following contains a microinversion: GGGTGGAGCTGTCTCTTGTTTATTGTGCTACGTCTCATCATAAGGTGAAGAGTAGCAACGTCCCTATTGGTGAACTCAGCCGAGATTTATGAAGAGAGGG
+The inversion length is 30
+It matches with the read that starts at position 506658
+The microinversion occurs at character position 1 in the read
+It matches to: GGTAGCACAATAAACAAGAGACAGCTCCACCGTCTCATCATAAGGTGAAGAGTAGCAACGTCCCTATTGGTGAACTCAGCCGAGATTTATGAAGAGAGGG
+This read took 321.864459038 seconds to process.
+The following contains a microinversion: CCTACACTGTTCGTCTTAGTACGCGCAATAACCCAGTACGCCCCGAATATAGAGCCATCCTCAATACTGGAGATCCCCATAGGTGGCAGGTGCGGGAATA
+The inversion length is 66
+It matches with the read that starts at position 4994604
+The microinversion occurs at character position 13 in the read
+It matches to: CCTACACTGTTCGTGGGGATCTCCAGTATTGAGGATGGCTCTATATTCGGGGCGTACTGGGTTATTGCGCGTACTAAGATAGGTGGCAGGTGCGGGAATA
+This read took 79.0110869408 seconds to process.
+The following contains a microinversion: CGGGATACGGAGCGTGTGATCGCATTTGGGTGAAGGCCAGGGACATAAGGTGTATTCGCCACTCAACGCTTCTCCAGCCCTCATAAAAAAATAGCGTAAC
+The inversion length is 63
+It matches with the read that starts at position 3019953
+The microinversion occurs at character position 24 in the read
+It matches to: CGGGATACGGAGCGTGTGATCGCATTTATGAGGGCTGGAGAAGCGTTGAGTGGCGAATACACCTTATGTCCCTGGCCTTCACCCAAAAAAATAGCGTAAC
+This read took 94.2951822281 seconds to process.
+The following contains a microinversion: GCATGACCCTCCGTGTTCCCTAAAGTGAGGGTTCAATCGAACGTAGATGGGTCCCGTCGAACACCATTTAAGTGAATGGTTTCCTAACTGCATAACACGA
+The inversion length is 44
+It matches with the read that starts at position 1285912
+The microinversion occurs at character position 14 in the read
+It matches to: GCATGACCCTCCGTGACGGGACCCATCTACGTTCGATTGAACCCTCACTTTAGGGAACGAACACCATTTAAGTGAATGGTTTCCTAACTGCATAACACGA
+This read took 209.101446867 seconds to process.
+The following contains a microinversion: ATGTACAGCCGGTAGTCTAACAGACATATGCTATAGTGGGTACTAAGACATACTTACCAGTGAAAATTTGGTTCGTTTAAGCTGCTGGATTTAGGACTTC
+The inversion length is 61
+It matches with the read that starts at position 2550054
+The microinversion occurs at character position 33 in the read
+It matches to: ATGTACAGCCGGTAGTCTAACAGACATATGCTACTAAATCCAGCAGCTTAAACGAACCAAATTTTCACTGGTAAGTATGTCTTAGTACCCACTAGACTTC
+This read took 104.921905041 seconds to process.
+The following contains a microinversion: AAAGAGCTGAACCTACTTATCCCCAATGCATCGGTCTATACCACTCTTCATTTTGAATGCGGTAAGTTGGACTGGGATGGTTTGATTGGGAAGGTTATAT
+The inversion length is 59
+It matches with the read that starts at position 1908087
+The microinversion occurs at character position 9 in the read
+It matches to: AAAGAGCTGAACTTACCGCATTCAAAATGAAGAGTGGTATAGACCGATGCATTGGGGATAAGTAGGTTGGACTGGGATGGTTTGATTGGGAAGGTTATAT
+This read took 112.542962074 seconds to process.
+The following contains a microinversion: GGCGAACCGTTCACTGGCTGATATTCAAACCCCACCGTGAGCGTTAGACTTTTCATAGCCTAGATTAGTTCAGCATCTGGCGAGTGTCTTGCTTTCCTTA
+The inversion length is 56
+It matches with the read that starts at position 1744916
+The microinversion occurs at character position 42 in the read
+It matches to: GGCGAACCGTTCACTGGCTGATATTCAAACCCCACCGTGAGCAGGAAAGCAAGACACTCGCCAGATGCTGAACTAATCTAGGCTATGAAAAGTCTAACTA
+This read took 134.08761692 seconds to process.
+The following contains a microinversion: GGAGCGGGGAGACTTGAATATGGTCCCATACACAGGCCTTAGTGATTCAGAACATAGAGATGAAACAAATTGGAACACTGTTCCGTGCAGGGAATCACGA
+The inversion length is 85
+It matches with the read that starts at position 4392146
+The microinversion occurs at character position 6 in the read
+It matches to: GGAGCGCCTGCACGGAACAGTGTTCCAATTTGTTTCATCTCTATGTTCTGAATCACTAAGGCCTGTGTATGGGACCATATTCAAGTCTCCCGAATCACGA
+This read took 16.4709470272 seconds to process.
+The following contains a microinversion: GTTTTGCAACCACACGGAACAAACGTGGGAAATCTGAAGCTCATAGAACATGCGACGGTACGACCCCCCAGTCGTATGTACTTCAACTGTGTTATTCATA
+The inversion length is 30
+It matches with the read that starts at position 1599686
+The microinversion occurs at character position 29 in the read
+It matches to: GTTTTGCAACCACACGGAACAAACGTGGGACCGTCGCATGTTCTATGAGCTTCAGATTTACGACCCCCCAGTCGTATGTACTTCAACTGTGTTATTCATA
+This read took 325.664515972 seconds to process.
+The following contains a microinversion: GTTCGTTTGGATCCACACTCCCCGTGCAGGTTGGCTGCCACACAGCGTCATATTCGGTACGCAGCGGGAATTAATGGCCTCTCCAAGACGATCTTAAGTT
+The inversion length is 26
+It matches with the read that starts at position 1527800
+The microinversion occurs at character position 19 in the read
+It matches to: GTTCGTTTGGATCCACACTCTGTGTGGCAGCCAACCTGCACGGGGCGTCATATTCGGTACGCAGCGGGAATTAATGGCCTCTCCAAGACGATCTTAAGTT
+This read took 361.247135162 seconds to process.
+The following contains a microinversion: AAGCGCAGCTTTGTGTGATACGCGCGTTCGAGCTCACTTTGACAACTCAAGGCGTCCTAAGCTAGTTTTGCTCGACGGCGCGCCAGGAGAAATCCCCAGC
+The inversion length is 41
+It matches with the read that starts at position 2485066
+The microinversion occurs at character position 7 in the read
+It matches to: AAGCGCAGAGTTGTCAAAGTGAGCTCGAACGCGCGTATCACACAAAGCAAGGCGTCCTAAGCTAGTTTTGCTCGACGGCGCGCCAGGAGAAATCCCCAGC
+This read took 229.834523916 seconds to process.
+The following contains a microinversion: AACAGCGCAGCGTAGGAGGAAAGTTAAGGTCCGGATTACAGTGACGGCTCTTGGAGTAGCCGGGGCTCTATCTCCTACAAAAAATGAGCCACACAGATAT
+The inversion length is 44
+It matches with the read that starts at position 3655037
+The microinversion occurs at character position 9 in the read
+It matches to: AACAGCGCACAAGAGCCGTCACTGTAATCCGGACCTTAACTTTCCTCCTACGCGAGTAGCCGGGGCTCTATCTCCTACAAAAAATGAGCCACACAGATAT
+This read took 207.272572994 seconds to process.
+The following contains a microinversion: AAAGCTCCACCTAACACATCGTCTAAGGGCTTAACCTGCTGCAAGTCAATGAGCGTCGGCGATTTCCTGGTACCGTTCCCGTGGCGGTTGCACCTTAGGG
+The inversion length is 25
+It matches with the read that starts at position 2039185
+The microinversion occurs at character position 43 in the read
+It matches to: AAAGCTCCACCTAACACATCGTCTAAGGGCTTAACCTGCTGCAAGGAAATCGCCGACGCTCATTGACTGGTACCGTTCCCGTGGCGGTTGCACCTTAGGG
+This read took 374.30162406 seconds to process.
+The following contains a microinversion: TTTGACACTAGGTCTAGACCCCGGATGAATGCTATACACGATCCTTTTAAGCAAGCGTGTTGAGCCCCGCTTCTACTTGCCTTCGGCTCTCGACGATACT
+The inversion length is 40
+It matches with the read that starts at position 1952722
+The microinversion occurs at character position 34 in the read
+It matches to: TTTGACACTAGGTCTAGACCCCGGATGAATGCTAAGAAGCGGGGCTCAACACGCTTGCTTAAAAGGATCGTGTAACTTGCCTTCGGCTCTCGACGATACT
+This read took 242.060478926 seconds to process.
+The following contains a microinversion: GGACCGCGTCGAAGATTGAAAAGGTACAGCCGTGCTCAAGTATGGGCTCCATTCCACGTGTCCCGTTACTGTTTATTGTAATGGAGATGACTGCACCCAA
+The inversion length is 67
+It matches with the read that starts at position 4314813
+The microinversion occurs at character position 31 in the read
+It matches to: GGACCGCGTCGAAGATTGAAAAGGTACAGCCGGGTGCAGTCATCTCCATTACAATAAACAGTAACGGGACACGTGGAATGGAGCCCATACTTGAGCACAA
+This read took 76.905903101 seconds to process.
+The following contains a microinversion: GTACCATTCTCAGACACGCTATTACGCCAGAACACATTCTGAGCCCTCCGGCCTCTCCTGCCTGCCACTTTACGGCCGGGCCCATGACCCTACCCGTGTC
+The inversion length is 56
+It matches with the read that starts at position 2303485
+The microinversion occurs at character position 22 in the read
+It matches to: GTACCATTCTCAGACACGCTATCGGCCGTAAAGTGGCAGGCAGGAGAGGCCGGAGGGCTCAGAATGTGTTCTGGCGTAGGCCCATGACCCTACCCGTGTC
+This read took 130.924385071 seconds to process.
+The following contains a microinversion: CGCTTCAGCCCGTACCCCATCCCATGGTAAATTTTGTTATAATAAACTCGTACGGTTGAGGCGCACCTGGTTGGTGCGTTATACGAGAGCTAGGTTTCCG
+The inversion length is 67
+It matches with the read that starts at position 3194835
+The microinversion occurs at character position 2 in the read
+It matches to: CGCAGGTGCGCCTCAACCGTACGAGTTTATTATAACAAAATTTACCATGGGATGGGGTACGGGCTGAAGGTTGGTGCGTTATACGAGAGCTAGGTTTCCG
+This read took 73.0486209393 seconds to process.
+The following contains a microinversion: TGAGATGTAAAGGTCGGTCACACGGCGAGCTGCCCGGCGCCGGAATCCGATTCCGACACCCCGCCGTAAAAACGTCAGAAGACTGACATTGAATGGTCCC
+The inversion length is 53
+It matches with the read that starts at position 879863
+The microinversion occurs at character position 25 in the read
+It matches to: TGAGATGTAAAGGTCGGTCACACGGCTGACGTTTTTACGGCGGGGTGTCGGAATCGGATTCCGGCGCCGGGCAGCTCGAAGACTGACATTGAATGGTCCC
+This read took 148.826105833 seconds to process.
+The following contains a microinversion: CTCGTCATCACACCGACTGAAAACCCCTAGCTCTCGTGTGCCGCACTTGGACGAGCGCGGTCCCACAATTATCAACTGACCGGGACTTCATATAGGGAGC
+The inversion length is 45
+It matches with the read that starts at position 915632
+The microinversion occurs at character position 32 in the read
+It matches to: CTCGTCATCACACCGACTGAAAACCCCTAGCTAGTTGATAATTGTGGGACCGCGCTCGTCCAAGTGCGGCACACGAGGACCGGGACTTCATATAGGGAGC
+This read took 202.983389139 seconds to process.
+The following contains a microinversion: TGAAGCAAAGCCGCCCGGCGGTAGGCTCTCAAACAGCCAAATCTTTTCACCGGCCAACAGGATCCAGGTAGCGAAAGGTGACCTGGTAACGAGGTACGTC
+The inversion length is 63
+It matches with the read that starts at position 1244001
+The microinversion occurs at character position 22 in the read
+It matches to: TGAAGCAAAGCCGCCCGGCGGTCAGGTCACCTTTCGCTACCTGGATCCTGTTGGCCGGTGAAAAGATTTGGCTGTTTGAGAGCCTGTAACGAGGTACGTC
+This read took 93.2082691193 seconds to process.
+The following contains a microinversion: TGGGATGTTCGAATCTCAAACCGTTAATTCCCCCGTTAGCTAGTGCTTAGGGGGCCTCCTGATTTATCATTTATTATTAAAGCACTCATTGAGGCGGATG
+The inversion length is 77
+It matches with the read that starts at position 2066056
+The microinversion occurs at character position 19 in the read
+It matches to: TGGGATGTTCGAATCTCAACGCCTCAATGAGTGCTTTAATAATAAATGATAAATCAGGAGGCCCCCTAAGCACTAGCTAACGGGGGAATTAACGGTGATG
+This read took 38.0863389969 seconds to process.
+The following contains a microinversion: ACTCTCGATTGCCTGACTTGTACCTACACTTACTTCCTAACCGGGGGGACGTCGTGAGTCCGAATTCATATCGTACAACCGAACCGTGTTTTAACACTAG
+The inversion length is 23
+It matches with the read that starts at position 4942663
+The microinversion occurs at character position 19 in the read
+It matches to: ACTCTCGATTGCCTGACTTGGTTAGGAAGTAAGTGTAGGTACGGGGGGACGTCGTGAGTCCGAATTCATATCGTACAACCGAACCGTGTTTTAACACTAG
+This read took 390.876070023 seconds to process.
+The following contains a microinversion: TACTCTGGACACCCCTTTCTTCGCTATTGCAATACTTCCGCGTGGCACTCAAATGCAGCGGAGGCAGCCTGCATTCGTCTCCTCGAAGGAGCTCCGTCCT
+The inversion length is 72
+It matches with the read that starts at position 1386183
+The microinversion occurs at character position 22 in the read
+It matches to: TACTCTGGACACCCCTTTCTTCGAGCTCCTTCGAGGAGACGAATGCAGGCTGCCTCCGCTGCATTTGAGTGCCACGCGGAAGTATTGCAATAGCCGTCCT
+This read took 55.3040869236 seconds to process.
+The following contains a microinversion: AACGAAATCCCGGCTGGCCAGGGTCGATTTTTACCGCAGTCACACATTTACAGCACAGGCAGACGTGAGCGCAGTATTATGGCAACGAGAGAGGCACTAC
+The inversion length is 51
+It matches with the read that starts at position 1718948
+The microinversion occurs at character position 8 in the read
+It matches to: AACGAAATCCTGTGCTGTAAATGTGTGACTGCGGTAAAAATCGACCCTGGCCAGCCGGGCAGACGTGAGCGCAGTATTATGGCAACGAGAGAGGCACTAC
+This read took 159.498070002 seconds to process.
+The following contains a microinversion: ACGACGGCATTTTAACCATTGCCGGAGCTGTCCTCTCCCGCGAAGCTCTCGGGTGAGACTATATCTGAGACGTGGTTTAGCCCATTCGCCGTATCGTATT
+The inversion length is 84
+It matches with the read that starts at position 442877
+The microinversion occurs at character position 2 in the read
+It matches to: ACAATGGGCTAAACCACGTCTCAGATATAGTCTCACCCGAGAGCTTCGCGGGAGAGGACAGCTCCGGCAATGGTTAAAATGCCGTCCGCCGTATCGTATT
+This read took 18.1751070023 seconds to process.
+The following contains a microinversion: TCCTCGCTAGCACCGGGCGGACTGAGTAATCTCACGTCCCCTGTCATCTACCACCGGACGCGTTGAACATATGGTAGTGCTACCTGAGTCTATAGAGCTA
+The inversion length is 18
+It matches with the read that starts at position 4050546
+The microinversion occurs at character position 31 in the read
+It matches to: TCCTCGCTAGCACCGGGCGGACTGAGTAATCAGATGACAGGGGACGTGAACCACCGGACGCGTTGAACATATGGTAGTGCTACCTGAGTCTATAGAGCTA
+This read took 445.347141981 seconds to process.
+The following contains a microinversion: TTAGCATCTCACCAAATTGGGACCGACTATGGTAAGCGTGATGCACTAGGACATGCATCCGACTATGATGGAGTTACTAAATGCAAAGGCGTGCCGCAGG
+The inversion length is 78
+It matches with the read that starts at position 3702901
+The microinversion occurs at character position 13 in the read
+It matches to: TTAGCATCTCACCCGCCTTTGCATTTAGTAACTCCATCATAGTCGGATGCATGTCCTAGTGCATCACGCTTACCATAGTCGGTCCCAATTTTGCCGCAGG
+This read took 34.6889898777 seconds to process.
+The following contains a microinversion: CTCTGTAAATTGCCGAGTTGCCCTTTGGTGAACCTGCGATTTTAATACTTCATCCTACAGTGGCCTTCGACGATACTGATTCGGGAGGCAGGTTGCAGTG
+The inversion length is 84
+It matches with the read that starts at position 157730
+The microinversion occurs at character position 12 in the read
+It matches to: CTCTGTAAATTGGCAACCTGCCTCCCGAATCAGTATCGTCGAAGGCCACTGTAGGATGAAGTATTAAAATCGCAGGTTCACCAAAGGGCAACTCGGAGTG
+This read took 19.424571991 seconds to process.
+The following contains a microinversion: GTACAAGAGGTCACGTGAAGTTGGGACCTATTTCTGCTGGGCCCGCCCACCCCAAAGTTTATTACCTCTGAGATTGTACCACCCGTAGTGTTTCGTGGTC
+The inversion length is 37
+It matches with the read that starts at position 1263321
+The microinversion occurs at character position 43 in the read
+It matches to: GTACAAGAGGTCACGTGAAGTTGGGACCTATTTCTGCTGGGCCGGTACAATCTCAGAGGTAATAAACTTTGGGGTGGGCGACCCGTAGTGTTTCGTGGTC
+This read took 266.275104046 seconds to process.
